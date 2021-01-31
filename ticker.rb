@@ -5,21 +5,21 @@
 class Ticker < Formula
   desc "Terminal stock ticker with live updates and position tracking"
   homepage "https://github.com/achannarasappa/ticker"
-  version "1.1.0"
+  version "1.1.1"
   license "GPLv3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/achannarasappa/ticker/releases/download/v1.1.0/ticker-1.1.0-mac-amd64.tar.gz"
-    sha256 "59df3afa7c7393f47996bfda17c03fa797a5290c9837bc28f171f36c519226e8"
+    url "https://github.com/achannarasappa/ticker/releases/download/v1.1.1/ticker-1.1.1-mac-amd64.tar.gz"
+    sha256 "b893cbef4a242d8672a8ea3747a41191a07c0ec6713420352552fc4c77c1b313"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/achannarasappa/ticker/releases/download/v1.1.0/ticker-1.1.0-linux-amd64.tar.gz"
-    sha256 "e81206de426df8eaca4527269c7aab7e7656fdf909683044c4857a6558ca899e"
+    url "https://github.com/achannarasappa/ticker/releases/download/v1.1.1/ticker-1.1.1-linux-amd64.tar.gz"
+    sha256 "551d84556b2cdc825fcf41552f6f74f0a44017b828269ce464d09a3532aac2d0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/achannarasappa/ticker/releases/download/v1.1.0/ticker-1.1.0-linux-arm64.tar.gz"
-    sha256 "f7bb323e99320777d4e09149b7fd8b713f2a09961728ac144917be8b05aafefb"
+    url "https://github.com/achannarasappa/ticker/releases/download/v1.1.1/ticker-1.1.1-linux-arm64.tar.gz"
+    sha256 "b8ea677ffbbc42e0e34870cb72d0bea56e775cded2c6ebcd5b74a8a762f9aca8"
   end
 
   def install
