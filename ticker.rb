@@ -5,25 +5,25 @@
 class Ticker < Formula
   desc "Terminal stock ticker with live updates and position tracking"
   homepage "https://github.com/achannarasappa/ticker"
-  version "3.1.8"
+  version "3.1.9"
   license "GPLv3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.8/ticker-3.1.8-mac-amd64.tar.gz"
-    sha256 "68cd7311db3286e5708a67bf4cfb45a0ac950399854866b89d782c7c44e6f0f5"
+    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.9/ticker-3.1.9-mac-amd64.tar.gz"
+    sha256 "0c7ab68944cc02ee3f3cc84f2792424daa9c1dda4fa7abeb29c7afd203999491"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.8/ticker-3.1.8-linux-amd64.tar.gz"
-    sha256 "a77a8a4988f4eff35060bb7f1119bc9f8ea3c68a554ae57dcb2f732f65cb6021"
+    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.9/ticker-3.1.9-linux-amd64.tar.gz"
+    sha256 "2ccf98acdef5d22fbe12d37adef87024ea1fdf872ecf89306789dc5f96d072fc"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.8/ticker-3.1.8-linux-armv6.tar.gz"
-    sha256 "5349a1d4dfa8ea16dff227f1802d63f3ee6c5b659ba18700d0697925f1341353"
+    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.9/ticker-3.1.9-linux-armv6.tar.gz"
+    sha256 "9919dc45cc42871d52af8eb4bac1e0d7417378da06c4926d409d252041069185"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.8/ticker-3.1.8-linux-arm64.tar.gz"
-    sha256 "ccdbcfdacad75ccf7b5d4acb9b2ef045710b2ddd0b56b1c0ec08b1637c193150"
+    url "https://github.com/achannarasappa/ticker/releases/download/v3.1.9/ticker-3.1.9-linux-arm64.tar.gz"
+    sha256 "a34516efea8b14cd4b5794e07ef77797f49c0ea6f6472354f6402d5353c5ca03"
   end
 
   def install
