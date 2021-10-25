@@ -7,7 +7,6 @@ class Ticker < Formula
   homepage "https://github.com/achannarasappa/ticker"
   version "4.3.0"
   license "GPLv3"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/achannarasappa/ticker/releases/download/v4.3.0/ticker-4.3.0-mac-amd64.tar.gz"
