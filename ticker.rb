@@ -11,7 +11,7 @@ class Ticker < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/achannarasappa/ticker/releases/download/v5.0.0/ticker-5.0.0-mac-amd64.tar.gz"
-      sha256 "d082f411b8f28b79740fbcf67698767d0480422f32104fc2f056d759c9814db1"
+      sha256 "daeb7961e7320467d4b032427241b391c906f92bbd40e06181c4c1ba93bb9f0c"
 
       def install
         bin.install "ticker"
@@ -19,7 +19,7 @@ class Ticker < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/achannarasappa/ticker/releases/download/v5.0.0/ticker-5.0.0-mac-arm64.tar.gz"
-      sha256 "3df9f86997cd2a1d23bc3ab2c6f714cdad45e3e79388b5a3d59eac8163ada5a4"
+      sha256 "f6c4c527a4b812463ee04c78778b71343c67ba038db4d0bcefb8f99f24a3cb83"
 
       def install
         bin.install "ticker"
@@ -30,7 +30,7 @@ class Ticker < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/achannarasappa/ticker/releases/download/v5.0.0/ticker-5.0.0-linux-amd64.tar.gz"
-      sha256 "43bd591d14ae48629a91d686cb9e7257699151ea7522433cd6fca082f7cf7392"
+      sha256 "bb78957fe2543cd32022a523c5c0934f24e96a03fa24a50c9e5d644147f92ffc"
 
       def install
         bin.install "ticker"
@@ -38,7 +38,7 @@ class Ticker < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/achannarasappa/ticker/releases/download/v5.0.0/ticker-5.0.0-linux-armv6.tar.gz"
-      sha256 "8b12124dfbb1a0e6fc47867b206ff07baafcc87462b6ff24fee3ad9c835bb438"
+      sha256 "8abee47d9c45fe0624badb35687670f21f25087e2db38c5382d48645b879dbc9"
 
       def install
         bin.install "ticker"
@@ -46,7 +46,7 @@ class Ticker < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/achannarasappa/ticker/releases/download/v5.0.0/ticker-5.0.0-linux-arm64.tar.gz"
-      sha256 "0babe5457e378f12bab301b68662aa99a5afdc901d6b09cb76096ba548f03c40"
+      sha256 "f1c064bde564a45db64b858289dcf8df0af17619ccfd4747a57e1bf7e373f737"
 
       def install
         bin.install "ticker"
