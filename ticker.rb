@@ -5,21 +5,21 @@
 class Ticker < Formula
   desc "Terminal stock ticker with live updates and position tracking"
   homepage "https://github.com/achannarasappa/ticker"
-  version "5.0.6"
+  version "5.0.7"
   license "GPLv3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.6/ticker-5.0.6-mac-amd64.tar.gz"
-      sha256 "5f2b680d0a95f98de89893bf533905e361f8970015ddd328870b82bb02e132ba"
+      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.7/ticker-5.0.7-mac-amd64.tar.gz"
+      sha256 "2515665df485de4d072fb94479b43901f526d665b30c3f8399e967113b299917"
 
       def install
         bin.install "ticker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.6/ticker-5.0.6-mac-arm64.tar.gz"
-      sha256 "b72dba0f30e5b2eb8543ee1a41d2938993b86da8939d7facc9dbff1d2cb9e26c"
+      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.7/ticker-5.0.7-mac-arm64.tar.gz"
+      sha256 "98858948f200dc4ba097dff84ed180d088487c5f2cf5a9b6b2819ce4fd7f1fdc"
 
       def install
         bin.install "ticker"
@@ -29,24 +29,24 @@ class Ticker < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.6/ticker-5.0.6-linux-amd64.tar.gz"
-      sha256 "48c8ba4d8f08460f6249d4f949fdd39c2059defc7d66a65d2193402d1414b6f7"
+      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.7/ticker-5.0.7-linux-amd64.tar.gz"
+      sha256 "60e0f8d366f9c0ed26ac5435ec4948f2a617cdd1efff3de3f3bc03e26cafab27"
 
       def install
         bin.install "ticker"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.6/ticker-5.0.6-linux-armv6.tar.gz"
-      sha256 "dc47c0e4a7a7867070c93917bf2b624b5bb0317dea3eab1a42b67fe181009629"
+      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.7/ticker-5.0.7-linux-armv6.tar.gz"
+      sha256 "11f6484dcd6b99d0bf8ea38bbbc716d94e836b753414ebeb7d47cb5c298577eb"
 
       def install
         bin.install "ticker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.6/ticker-5.0.6-linux-arm64.tar.gz"
-      sha256 "6f932c9a5c40b831a2b15794489e50c434fd91f81596cfc82b007a06fe44f13d"
+      url "https://github.com/achannarasappa/ticker/releases/download/v5.0.7/ticker-5.0.7-linux-arm64.tar.gz"
+      sha256 "7ce237b20d4df83a87cb3a08446f10c9c5f08e434edad62daaaae006c46cd04b"
 
       def install
         bin.install "ticker"
